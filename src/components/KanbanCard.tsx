@@ -23,11 +23,11 @@ export function KanbanCard({ card, onDelete }: KanbanCardProps) {
     <div ref={setNodeRef} style={style}>
       <div
         style={{
-          background: "#fff",
-          border: "1px solid #e0e0e0",
-          borderRadius: "8px",
-          padding: "12px",
-          marginBottom: "8px",
+          background: "#fffffe",
+          border: "1px solid #e3e2df",
+          borderRadius: "6px",
+          padding: "10px 12px",
+          marginBottom: "6px",
           boxShadow: "0 1px 3px rgba(0,0,0,0.06)",
           display: "flex",
           justifyContent: "space-between",
@@ -42,6 +42,8 @@ export function KanbanCard({ card, onDelete }: KanbanCardProps) {
             fontSize: "14px",
             cursor: "grab",
             flex: 1,
+            color: "#37352f",
+            lineHeight: "1.5",
           }}
         >
           {card.content}
@@ -52,9 +54,10 @@ export function KanbanCard({ card, onDelete }: KanbanCardProps) {
             background: "none",
             border: "none",
             cursor: "pointer",
-            color: "#aaa",
+            color: "#c7c6c3",
             fontSize: "16px",
-            padding: "0 4px",
+            padding: "0 0 0 8px",
+            lineHeight: 1,
           }}
         >
           ×
